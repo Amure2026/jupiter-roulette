@@ -1,9 +1,10 @@
-export type Language = 'ru' | 'tr' | 'en' | 'de' | 'id' | 'es' | 'ms' | 'ko'
+export type Language = 'ru' | 'tr' | 'en' | 'pt' | 'de' | 'id' | 'es' | 'ms' | 'ko'
 
 export const LANGUAGE_NAMES: Record<Language, string> = {
   ru: 'Русский',
   tr: 'Türkçe',
   en: 'English',
+  pt: 'Português (BR)',
   de: 'Deutsch',
   id: 'Bahasa Indonesia',
   es: 'Español',
@@ -15,6 +16,7 @@ export const LANGUAGE_FLAGS: Record<Language, string> = {
   ru: '🇷🇺',
   tr: '🇹🇷',
   en: '🇬🇧',
+  pt: '🇧🇷',
   de: '🇩🇪',
   id: '🇮🇩',
   es: '🇪🇸',
@@ -247,5 +249,30 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     prediction: '🔮 예측',
     mainDozen: '📊 컬럼',
     columns: '🎯 더즌',
+  },
+  pt: {
+    title: 'JUPITER',
+    selectLanguage: 'Selecione o idioma',
+    ready: '✅ Pronto',
+    addedNumber: '✅ Número adicionado',
+    deletedNumber: '🗑 Excluído',
+    baseCleared: '✅ Limpo',
+    needMinNumbers: '⚠️ Necessário pelo menos 4 números',
+    predicting: '🔄 Prevendo...',
+    predictionComplete: '✅ Previsão pronta',
+    predictionError: '❌ Erro na previsão',
+    numbersInBase: 'Números na base:',
+    minRequired: 'mín. 4',
+    quickButtons: '🔢 BOTÕES RÁPIDOS',
+    delete: 'Excluir',
+    predict: 'Prever',
+    clear: 'Limpar',
+    lastNumbers: '📜 Últimos 20 números',
+    noNumbers: 'Sem números',
+    currentBase: '📋 BASE DE DADOS ATUAL',
+    noNumbersHint: 'Sem números. Clique nos botões.',
+    prediction: '🔮 PREVISÃO',
+    mainDozen: '📊 COLUNA',
+    columns: '🎯 DÚZIA',
   }
 }
